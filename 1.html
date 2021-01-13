@@ -11,17 +11,60 @@
     gtag('js', new Date());
 
     gtag('config', 'G-539TL3GQMT');
-  </script>  
+  </script>
+  <style>
+    body {
+      margin: 0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size:60px;
+      text-align:center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid ol {
+      border-right: 1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding: 20px;
+      padding-left:33px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid #article{
+      padding-left: 25px;
+    }
+    @media(max-width:800px){
+      #grid {
+        display: block;
+      }
+      #grid ol {
+        border-right: none;
+      }
+      h1 {
+        border-bottom: none;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">윤동주 시</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="1.html">별 헤는 밤</a></li>
     <li><a href="2.html">서시</a></li>
     <li><a href="3.html">십자가</a></li>
   </ol>
+    <div id="article">
   <h2><a href="https://terms.naver.com/entry.nhn?docId=2837129&cid=55659&categoryId=55659" target="blank" title="별 헤는 밤 지식백과">별 헤는 밤</a></h2>
-  <h3>윤동주</h3>
   <p><img src="stars.jpg" width="50%"></p>
   계절이 지나가는 하늘에는
   가을로 가득 차 있습니다.<br>
@@ -60,39 +103,7 @@
   무덤 위에 파란 잔디가 피어나듯이<br>
   내 이름자 묻힌 언덕 위에도
   자랑처럼 풀이 무성할 거외다.<br>
-  <p>
-    <div id="disqus_thread"></div>
-  <script>
-      /**
-      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-      /*
-      var disqus_config = function () {
-      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-      };
-      */
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://web1-mxpmfr25ee.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </p>
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5ffa2afac31c9117cb6d0e00/1erkjforg';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
+    </div>
+  </div>
 </body>
 </html>
